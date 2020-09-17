@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+.intro-text {
+    color: #4A4A52;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.intro-text span {
+    font-weight: bold;
+}
+
+.feedback-text {
+    font-size: 1em;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}

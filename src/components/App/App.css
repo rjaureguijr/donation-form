@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: auto;
+  max-width: 80%;
+}
+
+.currency-placeholder {
+  display: inline;
+  position: relative;
+}
+.currency-placeholder::before {
+  content: '$';
+  font-weight: 600;
+  position: absolute;
+  left: 8px;
+  top: 0;
+}
+
+.donation-goal-text {
+  background-color: #46495d;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 25px auto 0 auto;
+  max-width: 62%;
+  padding: 5px 10px;
+  text-align: left;
+}
+      
+.container {
+  border: 1px solid #CBCBD3;
+  border-radius: 5px;
+  max-width: 60%;
+  padding: 18px 25px 18px 25px;
+  margin: 10px auto 5px auto; 
+}
+
+input {
+  background: #ffffff;
+  border: 1px solid lightgray;
+  border-radius: .25rem;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 1em 1em .6em 0;
+  outline: none;
+  padding: 15px 30px 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:valid,
+input:invalid {
+  background-repeat: no-repeat;
+  background-position: right 20px top 15px;
+}
+input:valid {
+  border: 1px solid green;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSAyMEMxNi41MjI4IDIwIDIxIDE1LjUyMjggMjEgMTBDMjEgNC40NzcxNSAxNi41MjI4IDAgMTEgMEM1LjQ3NzE1IDAgMSA0LjQ3NzE1IDEgMTBDMSAxNS41MjI4IDUuNDc3MTUgMjAgMTEgMjBaIiBmaWxsPSIjMzM5MjU3Ii8+CjxyZWN0IHg9IjE1LjUxMjkiIHk9IjYiIHdpZHRoPSIyLjEwMzMxIiBoZWlnaHQ9IjEwLjUxNjUiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDE1LjUxMjkgNikiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjUuNDc3NTQiIHk9IjEwLjk5MjciIHdpZHRoPSIyLjEwMzMxIiBoZWlnaHQ9IjUuNjY3MTQiIHRyYW5zZm9ybT0icm90YXRlKC00NSA1LjQ3NzU0IDEwLjk5MjcpIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
+}
+input:invalid {
+  background-color: rgba(255, 182, 193, 0.5);
+  border: 1px solid red;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSAyMEMxNi41MjI4IDIwIDIxIDE1LjUyMjggMjEgMTBDMjEgNC40NzcxNSAxNi41MjI4IDAgMTEgMEM1LjQ3NzE1IDAgMSA0LjQ3NzE1IDEgMTBDMSAxNS41MjI4IDUuNDc3MTUgMjAgMTEgMjBaIiBmaWxsPSIjRUIzQzNDIi8+CjxwYXRoIGQ9Ik0xMS44MzU5IDEyLjY0ODRIMTAuMjAzMUwxMC4wMjM0IDQuNjI1SDEyLjAyMzRMMTEuODM1OSAxMi42NDg0Wk05Ljk2ODc1IDE1LjEwMTZDOS45Njg3NSAxNC44MDQ3IDEwLjA2NTEgMTQuNTU5OSAxMC4yNTc4IDE0LjM2NzJDMTAuNDUwNSAxNC4xNjkzIDEwLjcxMzUgMTQuMDcwMyAxMS4wNDY5IDE0LjA3MDNDMTEuMzgwMiAxNC4wNzAzIDExLjY0MzIgMTQuMTY5MyAxMS44MzU5IDE0LjM2NzJDMTIuMDI4NiAxNC41NTk5IDEyLjEyNSAxNC44MDQ3IDEyLjEyNSAxNS4xMDE2QzEyLjEyNSAxNS4zODggMTIuMDMxMiAxNS42Mjc2IDExLjg0MzggMTUuODIwM0MxMS42NTYyIDE2LjAxMyAxMS4zOTA2IDE2LjEwOTQgMTEuMDQ2OSAxNi4xMDk0QzEwLjcwMzEgMTYuMTA5NCAxMC40Mzc1IDE2LjAxMyAxMC4yNSAxNS44MjAzQzEwLjA2MjUgMTUuNjI3NiA5Ljk2ODc1IDE1LjM4OCA5Ljk2ODc1IDE1LjEwMTZaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);}
+
+.btn {
+  background-color: #3459df;
+  border: 1px solid #304DB3;
+  border-radius: .25rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 15px 20px 15px;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2047CE;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 .2rem #3459df38;
+}
+
+input:not(:focus):valid,
+input:not(:focus):invalid {
+  background: none;
+  border: 1px solid lightgray;
+}
+input:focus:invalid {
+  box-shadow: 0 0 0 .2rem rgba(255, 0, 0, 0.267);
+}
+
+input:focus:valid {
+  box-shadow: 0 0 0 .2rem rgba(0,128,0, 0.5);
+}
+
+@media (max-width: 575px) {
+  .container, .donation-goal-text {
+    max-width: 540px;
+  }
+
+  input {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .donation-goal-text{
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .donation-goal-text{
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .donation-goal-text{
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .donation-goal-text{
+    max-width: 1100px;
+  }
+}
+     
