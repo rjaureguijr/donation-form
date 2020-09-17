@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/donation-form/static/css/main.dd851758.chunk.css",
+    "main.js": "/donation-form/static/js/main.8b449b5e.chunk.js",
+    "main.js.map": "/donation-form/static/js/main.8b449b5e.chunk.js.map",
+    "runtime-main.js": "/donation-form/static/js/runtime-main.fc77beb5.js",
+    "runtime-main.js.map": "/donation-form/static/js/runtime-main.fc77beb5.js.map",
+    "static/js/2.6e58d57f.chunk.js": "/donation-form/static/js/2.6e58d57f.chunk.js",
+    "static/js/2.6e58d57f.chunk.js.map": "/donation-form/static/js/2.6e58d57f.chunk.js.map",
+    "index.html": "/donation-form/index.html",
+    "precache-manifest.79aff6a490c7c38ab4d1468e34016633.js": "/donation-form/precache-manifest.79aff6a490c7c38ab4d1468e34016633.js",
+    "service-worker.js": "/donation-form/service-worker.js",
+    "static/css/main.dd851758.chunk.css.map": "/donation-form/static/css/main.dd851758.chunk.css.map",
+    "static/js/2.6e58d57f.chunk.js.LICENSE.txt": "/donation-form/static/js/2.6e58d57f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc77beb5.js",
+    "static/js/2.6e58d57f.chunk.js",
+    "static/css/main.dd851758.chunk.css",
+    "static/js/main.8b449b5e.chunk.js"
+  ]
+}
